@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner input = new Scanner(System.in);
+	
+        int n1, n2, soma, sub, multi, divi, op, opm=0;
+
+    do{
+        System.out.println("\t\t\t\t \t\t\t\t\n");
+        System.out.println("\t\t\t===================================\n");
+        System.out.println("\t\t\t|\t 1 - Soma |\n");
+        System.out.println("\t\t\t|\t 2 - Subtração |\n");
+        System.out.println("\t\t\t|\t 3 -  Multiplicação |\n");
+        System.out.println("\t\t\t|\t 4 - divisão |\n");
+        System.out.println("\t\t\t|\t 0 - sair |\n");
+        System.out.println("\t\t\t===================================\n");
+        System.out.println("\n\n");
+        System.out.println("\t\t\tPor favor, selecione uma opcao: ");
+        op = input.nextInt();
+        if(op==1){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            soma = n1 + n2;
+            System.out.printf("o resultado é:%d", soma);
+            System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
+	        	opm = input.nextInt();
+            
+        }else if(op==2){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            sub = n1 - n2;
+            System.out.printf("o resultado é:%d", sub);
+            System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
+	        	opm = input.nextInt();
+            
+            
+        }else if(op==3){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            multi = n1 * n2;
+            System.out.printf("o resultado é:%d", multi);
+            System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
+	        	opm = input.nextInt();
+            
+            
+        }else if(op==4){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            divi = n1 / n2;
+            System.out.printf("o resultado é:%d", divi);
+            System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
+	        	opm = input.nextInt();
+            
+            
+        }else{
+            System.out.printf("opção invalida");
+        }
+        
+    }while(opm==1);
+       
+	}
+	    
+}
