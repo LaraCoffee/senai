@@ -1,0 +1,19 @@
+//bliblioteca swing joption 
+import javax.swing.JOptionPane;
+
+
+public class Aula6 {
+    public static void main(String[] args) {
+        String nome;
+        
+        //metodo 
+        StringBuilder mensagem = new StringBuilder();
+        // metodo de entrada 
+        nome = JOptionPane.showInputDialog("digite seu nome:");
+        //cocatenação da mensagem 
+        mensagem.append("bem vindo ").append(nome).append("!");
+        //print da mensagem 
+        JOptionPane.showMessageDialog(null, mensagem);
+            
+    }
+}
