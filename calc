@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Main
+public class CalcAula7
 {
 	public static void main(String[] args) {
 	    Scanner input = new Scanner(System.in);
-	
+
         int n1, n2, soma, sub, multi, divi, op, opm=0;
 
     do{
@@ -17,7 +17,7 @@ public class Main
         System.out.println("\t\t\t|\t 0 - sair |\n");
         System.out.println("\t\t\t===================================\n");
         System.out.println("\n\n");
-        System.out.println("\t\t\tPor favor, selecione uma opcao: ");
+        System.out.print("\t\t\tPor favor, selecione uma opcao: ");
         op = input.nextInt();
         if(op==1){
             System.out.printf("Digite um numero: ");
@@ -28,7 +28,7 @@ public class Main
             System.out.printf("o resultado é:%d", soma);
             System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
 	        	opm = input.nextInt();
-            
+
         }else if(op==2){
             System.out.printf("Digite um numero: ");
             n1 = input.nextInt();
@@ -38,8 +38,8 @@ public class Main
             System.out.printf("o resultado é:%d", sub);
             System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
 	        	opm = input.nextInt();
-            
-            
+
+
         }else if(op==3){
             System.out.printf("Digite um numero: ");
             n1 = input.nextInt();
@@ -49,8 +49,8 @@ public class Main
             System.out.printf("o resultado é:%d", multi);
             System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
 	        	opm = input.nextInt();
-            
-            
+
+
         }else if(op==4){
             System.out.printf("Digite um numero: ");
             n1 = input.nextInt();
@@ -60,14 +60,14 @@ public class Main
             System.out.printf("o resultado é:%d", divi);
             System.out.printf("\ndeseja calcular novamente?\n 1 sim ou 2 não");
 	        	opm = input.nextInt();
-            
-            
+
+
         }else{
             System.out.printf("opção invalida");
         }
-        
+
     }while(opm==1);
-       
+
 	}
-	    
+
 }
