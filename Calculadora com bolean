@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class CalcAula7
+{
+	public static void main(String[] args) {
+	    Scanner input = new Scanner(System.in);
+        boolean continuar = true;
+        int n1, n2, soma, sub, multi, divi, op;
+
+    do{
+        System.out.println("\t\t\t\t \t\t\t\t\n");
+        System.out.println("\t\t\t===================================\n");
+        System.out.println("\t\t\t|\t 1 - Soma |\n");
+        System.out.println("\t\t\t|\t 2 - Subtração |\n");
+        System.out.println("\t\t\t|\t 3 -  Multiplicação |\n");
+        System.out.println("\t\t\t|\t 4 - divisão |\n");
+        System.out.println("\t\t\t|\t 0 - sair |\n");
+        System.out.println("\t\t\t===================================\n");
+        System.out.println("\n\n");
+        System.out.print("\t\t\tPor favor, selecione uma opcao: ");
+        op = input.nextInt();
+        if(op==1){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            soma = n1 + n2;
+            System.out.printf("o resultado é:%d", soma);
+
+        }else if(op==2){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            sub = n1 - n2;
+            System.out.printf("o resultado é:%d", sub);
+
+
+        }else if(op==3){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            multi = n1 * n2;
+            System.out.printf("o resultado é:%d", multi);
+
+
+        }else if(op==4){
+            System.out.printf("Digite um numero: ");
+            n1 = input.nextInt();
+            System.out.printf("Digite um numero: ");
+            n2 = input.nextInt();
+            divi = n1 / n2;
+            System.out.printf("o resultado é:%d", divi);
+
+
+        }else if(op == 0){
+            continuar = false;
+        }else{
+            System.out.printf("opção invalida");
+        }
+
+    }while(continuar);
+    System.out.println("programa encerrado");
+	}
+
+}
