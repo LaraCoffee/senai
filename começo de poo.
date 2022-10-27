@@ -1,0 +1,30 @@
+public class Caes {
+    public static void main(String[] args) {
+        
+        //selhante a um struct no C
+        
+        Cachorro cachorro1 = new Cachorro();
+        cachorro1.nome = "toto";
+        cachorro1.corOlho = "azuls";
+        cachorro1.peso = 60;
+        cachorro1.patas = 4;
+
+        Cachorro cachorro2 = new Cachorro();
+        cachorro2.nome = "bilú";
+        cachorro2.corOlho = "amarelo";
+        cachorro2.peso = 5;
+        cachorro2.patas = 3;
+
+        Cachorro cachorro3 = new Cachorro();
+        cachorro3.nome = "roberto";
+        cachorro3.corOlho = "marron";
+        cachorro3.peso = 20;
+        cachorro3.patas = 4;
+
+
+
+    }
+
+
+
+}
