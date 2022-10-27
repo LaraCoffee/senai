@@ -1,0 +1,46 @@
+import javax.swing.*; //pacote obrigatorio para usar o swing
+import java.awt.*;
+
+public class Aula8 extends JFrame{//subclasse do Jframe
+
+    
+        
+
+        //campo de texto
+        JLabel lblNome = new JLabel("nome");
+        JLabel lblEndereco = new JLabel("endereço");
+        JTextField nome = new JTextField(null, 20);
+        JTextField endereco = new JTextField(null, 20);
+        JButton btnGravar = new JButton("Gravar");
+        JButton btnFechar = new JButton("fechar");
+
+        public Aula8() {
+            
+        
+        setLayout(new GridLayout(4,2));
+
+
+
+        pack();
+        }   
+        //janela
+
+        // Aula8 Janela = new Aula8();
+        // Janela.setSize(350, 400);
+        // Janela.setVisible(true);
+
+        //pack();
+        
+
+
+
+
+
+      
+        
+        
+
+
+
+
+    }
