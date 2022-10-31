@@ -1,0 +1,32 @@
+import java.io.FileWriter;
+import java.util.Scanner;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+public class Aula11 {
+    public static void main(String[] args) throws IOException{
+        Scanner input = new Scanner(System.in);
+        int i,n;
+
+        System.out.print("informe o número para a tabuada: \n");
+        n = input.nextInt();
+
+        FileWriter arq = new FileWriter("C:\\Users\\Aluno\\Documents\\Lucas\\Projeto\\tabuada.txt");
+        PrintWriter gravaArq = new PrintWriter(arq);
+
+        gravaArq.printf(" +--resultado--+%n");
+        for (i=1; i <=10; i++) {
+            gravaArq.printf("| %2d x %d = %2d |\n", i, n, (i*n));
+        }
+        gravaArq.printf("+-------------+%n");
+        arq.close();
+
+        System.out.printf("\ntabuada do %d foi gravado com sucesso em \'C:\\Users\\Aluno\\Documents\\Lucas\\Projeto\\tabuada.txt'.\n",n);
+
+
+
+    }
+
+    
+}
